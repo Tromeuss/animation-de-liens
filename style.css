@@ -1,0 +1,405 @@
+
+
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Mynerve', cursive;    
+}
+
+.marque
+{
+    position: absolute;
+    top: 40px;
+    left: 1700px;
+    font-size: 20px;
+    color: #edf5e1;
+    background-color: #05386b;
+    padding: 20px;
+    border-radius: 100px;
+    font-family: 'Mynerve', cursive;    
+}
+section
+{
+    width: 100%;
+    height: 100%;
+    background-color: #5cdb95;
+}
+
+.titre 
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    font-size: 30px;
+    color: #edf5e1;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cont_liens
+{
+    width: 1600px;
+    height: 700px;
+    border: 3px solid #edf5e1;
+    margin: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cont_cont
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.column
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+/*-------------------- First animation ----------------------*/ 
+
+.slide-line
+{
+    font-size: 50px;
+    text-decoration: none;
+    color: #05386b;
+    position: relative;
+    font-family: 'Mynerve', cursive;
+    cursor: pointer;
+}
+
+.slide-line::before
+{
+    content: "";
+    position: absolute;
+    background: #05386b;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    transform-origin: 100% 0;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+}
+
+.slide-line:hover::before
+{
+    transform-origin: 0 0;
+    transform: scaleX(1);
+}
+
+
+
+
+
+/*-------------------- Second animation ----------------------*/ 
+
+.slide-lineb
+{
+    overflow: hidden;
+    position: relative;
+    font-size: 50px;
+    color: #05386b;
+    font-family: 'Mynerve', cursive;
+    cursor: pointer;
+
+}
+
+.slide-lineb span
+{
+    padding: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease-out;
+
+}
+
+.slide-lineb span:nth-child(2)
+{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 100%;
+
+}
+
+.slide-lineb:hover span
+{
+    transform: translateX(-100%);
+
+}
+
+/*-------------------- 3eme animation ----------------------*/ 
+
+.slide-linec
+{
+    font-size: 50px;
+    text-decoration: none;
+    position: relative;
+    color: #05386b;
+    font-family: 'Mynerve', cursive;
+    cursor: pointer;
+    padding: 7px;
+}
+
+.slide-linec::before,
+.slide-linec::after
+{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background: #05386b;
+    opacity: 0;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    transition: all 0.2s ease-in-out;
+}
+
+.slide-linec::before
+{
+    width: 90%;
+    bottom: 0;
+
+}
+
+.slide-linec::after
+{
+    width: 60%;
+    bottom: -7px;
+}
+
+.slide-linec:hover::before,
+.slide-linec:hover::after
+{
+    opacity: 1;
+    transform: translate(-50%, 0px);
+}
+
+.slide-linec::before,
+.slide-linec:hover::after
+{
+    transition-delay: 0.1s;
+}
+
+.slide-linec:hover::before
+{
+    transition-delay: 0s;
+}
+
+
+/*-------------------- 4eme animation ----------------------*/ 
+
+
+.slide-lined
+{
+    font-size: 50px;
+    text-decoration: none;
+    position: relative;
+    color: #05386b;
+    font-family: 'Mynerve', cursive;
+    padding: 7px 0;
+    cursor: pointer;
+}
+
+.slide-lined::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0%;
+    height: 3px;
+    background-color: #05386b;
+    transition: all 250ms ease-in-out;
+}
+
+.slide-lined::after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 3px;
+    background-color: #05386b;
+    transition: all 250ms ease-in-out;
+}
+
+
+.slide-lined:hover::before, .slide-lined:hover::after
+{
+    width: 100%;
+    left: 0;
+}
+
+
+
+/*-------------------- 5eme animation ----------------------*/ 
+
+
+.slide-linee
+{
+    font-size: 50px;
+    text-decoration: none;
+    position: relative;
+    color: #05386b;
+    font-family: 'Mynerve', cursive;
+    cursor: pointer;
+    transition: all 350ms ease-in-out;
+}
+
+.slide-linee:hover
+{
+    transform: scale(1.2);
+}
+
+
+/*-------------------- 6eme animation ----------------------*/ 
+
+.slide-linef
+{
+    font-size: 50px;
+    text-decoration: none;
+    position: relative;
+    color: #05386b;
+    font-family: 'Mynerve', cursive;
+    cursor: pointer;
+}
+
+
+.slide-linef::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #05386b;
+    transition: 0.2s;
+}
+
+.slide-linef:hover::before
+{
+    width: 100%;
+}
+
+/*-------------------- 7eme animation ----------------------*/ 
+
+.slide-lineg
+{
+    font-size: 50px;
+    text-decoration: none;
+    position: relative;
+    color: #05386b;
+    font-family: 'Mynerve', cursive;
+    cursor: pointer;
+    z-index: 20;
+    padding: 7px;
+}
+
+.slide-lineg::after
+
+{   content: "";
+    position: absolute;
+    background: #05386b;
+    width: 100%;
+    top: 0%;
+    left: 0;
+    height: 60px;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    transform-origin: 0% 0;
+    z-index:   -1;
+}
+
+.slide-lineg:hover::after
+{
+    transform: scaleX(1);
+}
+
+.slide-lineg:hover
+{
+    color: #5cdb95;
+}
+
+
+/*-------------------- 8eme animation ----------------------*/ 
+
+.slide-lineh
+{
+    font-size: 50px;
+    text-decoration: none;
+    position: relative;
+    color: #05386b;
+    font-family: 'Mynerve', cursive;
+    cursor: pointer;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+}
+
+.slide-lineh::after
+{
+    content: 'Explore';
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 1;
+    display: block;
+    color: #edf5e1;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 0.3s ease-out width;
+}
+
+.slide-lineh:hover::after
+{
+    width: 100%;
+}
+
+
+
+/*-------------------- 9eme animation ----------------------*/ 
+
+
+
+
+.slide-linei
+{
+    font-size: 50px;
+    text-decoration: none;
+    position: relative;
+    color: #05386b;
+    font-family: 'Mynerve', cursive;
+    cursor: pointer;
+    transition: all 350ms ease-in-out;
+}
+
+.slide-linei:hover
+{
+    transform: scale(0.8);
+}
+
+
+/*-------------------- 10eme animation ----------------------*/ 
+
+.link {
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .link:hover {
+    color: #05386b;
+  }
